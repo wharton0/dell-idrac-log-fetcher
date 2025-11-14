@@ -1,5 +1,20 @@
 # 更新日志
 
+## v0.1.1 - 2024-11-14
+
+### 改进
+- ✅ 移除不必要的 `getconfig -g cfgSerial` 命令
+- ✅ 简化诊断命令序列
+- ✅ 提升执行效率
+
+### 命令变更
+现在只运行以下 racadm 命令：
+1. `getsysinfo` - 获取系统信息
+2. `getractime` - 获取 iDRAC 时间
+3. `supportassist collect` - 触发日志收集
+4. `jobqueue view` - 查询任务状态
+5. `supportassist exportlastcollection` - 下载日志包
+
 ## v0.1.0 - 2024-11-14
 
 ### 初始版本
