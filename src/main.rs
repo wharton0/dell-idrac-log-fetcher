@@ -144,12 +144,6 @@ async fn main() {
         return;
     }
     run_racadm_command(&idrac_ip_str, &username, &password, &["getractime"]);
-    run_racadm_command(
-        &idrac_ip_str,
-        &username,
-        &password,
-        &["getconfig", "-g", "cfgSerial"],
-    );
 
     // Step 6: Collect TSR log.
     println!(
