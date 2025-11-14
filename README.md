@@ -14,17 +14,33 @@
 - ⚡ **异步高性能** - 基于 Tokio 异步运行时
 - 🎨 **友好界面** - 彩色输出和进度指示器
 
-## 系统要求
+## 📥 快速开始
 
-### 权限要求
-- Windows: 需要管理员权限运行（用于绑定 DHCP 端口 67）
-- 需要安装 `racadm` 工具并添加到系统 PATH
+### 下载预编译版本（推荐）
 
-## 编译
+**[⬇️ 下载 dell_log_fetcher.exe (v0.1.0)](https://github.com/wharton0/dell-idrac-log-fetcher/releases/download/v0.1.0/dell_log_fetcher.exe)**
+
+或访问 [Releases 页面](https://github.com/wharton0/dell-idrac-log-fetcher/releases) 查看所有版本。
+
+详细的下载和安装说明请参见 [DOWNLOAD.md](DOWNLOAD.md)。
+
+### 从源码编译
 
 ```bash
+git clone https://github.com/wharton0/dell-idrac-log-fetcher.git
+cd dell-idrac-log-fetcher
 cargo build --release
 ```
+
+## 系统要求
+
+### 必需
+- Windows 10 或更高版本（x64）
+- 管理员权限（用于绑定 DHCP 端口 67）
+- Dell RACADM 工具（需要添加到系统 PATH）
+
+### 推荐
+- 隔离的网络环境（避免与现有 DHCP 服务器冲突）
 
 ## 运行
 
