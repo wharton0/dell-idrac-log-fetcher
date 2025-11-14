@@ -1,6 +1,18 @@
 # Dell iDRAC Log Fetcher
 
+[![Rust CI](https://github.com/wharton0/dell-idrac-log-fetcher/workflows/Rust%20CI/badge.svg)](https://github.com/wharton0/dell-idrac-log-fetcher/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Rust](https://img.shields.io/badge/rust-1.70%2B-orange.svg)](https://www.rust-lang.org/)
+
 自动化连接到 DHCP 模式的 iDRAC 并收集日志的工具。
+
+## ✨ 特性
+
+- 🚀 **自动化 DHCP 服务器** - 无需手动配置网络
+- 🔧 **一键日志收集** - 自动运行诊断命令并下载日志
+- 💻 **纯 Rust 实现** - 无需 WinPcap/Npcap 驱动
+- ⚡ **异步高性能** - 基于 Tokio 异步运行时
+- 🎨 **友好界面** - 彩色输出和进度指示器
 
 ## 系统要求
 
@@ -106,6 +118,19 @@ cargo build --release
 4. **iDRAC 设置**: 确保 iDRAC 网络设置为 DHCP 模式
 5. **超时时间**: 默认等待 2 分钟，如果超时请检查物理连接
 
-## 许可证
+## 🤝 贡献
 
-本项目使用 MIT 许可证。
+欢迎提交 Issue 和 Pull Request！
+
+## 📝 许可证
+
+本项目使用 MIT 许可证。详见 [LICENSE](LICENSE) 文件。
+
+## 🔗 相关链接
+
+- [Dell iDRAC 文档](https://www.dell.com/support/kbdoc/en-us/000177080/idrac-home)
+- [RACADM 命令行参考](https://www.dell.com/support/manuals/en-us/idrac9-lifecycle-controller-v3.x-series/idrac_3.30.30.30_racadm_pub/racadm-command-line-reference-guide-for-idrac9)
+
+## ⭐ Star History
+
+如果这个项目对你有帮助，请给它一个 Star！
